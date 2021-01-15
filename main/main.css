@@ -1,0 +1,502 @@
+*{ 
+  font-family: "Lato", sans-serif;
+  
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+body{
+  background-color: #f5f5dc;  
+  overflow-x: hidden;
+}
+body::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  background: linear-gradient(#f00,rgb(248, 7, 248));
+  clip-path: polygon(50% 10%,35% 50%, 90% 30%, 50% 80%, 6% 50%, 10% 20%);
+  z-index: -1;
+}
+
+.container1{
+display: flex;
+justify-content: center;
+margin-top: 11%;
+}
+
+.cardContainer1{
+  display: block;
+  text-align: center;
+  margin-left: 3%;
+  margin-top: 1%;
+}
+.card1{
+  position: relative;
+  width: 634px;
+  height: 136px;
+  border-radius: 15px;
+  box-shadow: 18px 18px 18px rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.08);
+  border-top: 1.5px solid rgb(245, 245, 245,0.9);
+  border-left: 2px solid rgb(245, 245, 245,0.9);
+  border-bottom: 1px solid rgb(255, 235, 205, 0.3);
+  border-right: 1px solid rgb(255, 235, 205, 0.3);
+  backdrop-filter: blur(10px);
+}
+.image,.image img{
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+}
+.image img{
+  margin-top: 16px;
+}
+.heading, .heading h1{
+  display: relative;
+}
+.heading h1{
+  font-size: 80px;
+  margin-top: -70px;
+  padding-left: 20px;
+}
+
+.cardContainer2{
+  display: block;
+  text-align: center;
+  margin-top: 8%;
+}
+.card2{
+  position: relative;
+  width: 634px;
+  height: 330px;
+  border-radius: 15px;
+  box-shadow: 18px 18px 18px rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.08);
+  border-top: 1.5px solid rgb(245, 245, 245,0.9);
+  border-left: 2px solid rgb(245, 245, 245,0.9);
+  border-bottom: 1px solid rgb(255, 235, 205, 0.3);
+  border-right: 1px solid rgb(255, 235, 205, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.card2 h2{
+  font-weight: 700;
+  margin-top: 10px;
+}
+.card2 hr{
+  width: 70%;
+  border: 1px solid black;
+  margin-left: auto;
+  margin-right: auto;
+}
+.card2 p{
+  font-weight: 700;
+}
+
+.container3{  
+display: flex;
+justify-content: center;
+margin-top: 38%;
+margin-left: -30%;
+}
+
+.cardContainer3{
+  display: inline-block;
+  margin-left: 0%;
+  margin-top: 1%;
+  position: fixed;
+}
+.card3{
+  position: relative;
+  width: 350px;
+  height: 306px;
+  border-radius: 15px;
+  box-shadow: 18px 18px 18px rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.08);
+  border-top: 1.5px solid rgb(245, 245, 245,0.9);
+  border-left: 2px solid rgb(245, 245, 245,0.9);
+  border-bottom: 1px solid rgb(255, 235, 205, 0.3);
+  border-right: 1px solid rgb(255, 235, 205, 0.3);
+  backdrop-filter: blur(10px);
+}
+.card3 input{
+  display: block;
+  text-align: center;
+  width:86%;
+  height: 40px;
+  margin: 24px auto;  
+  border-style: none;
+  outline: none;
+  border-radius: 8px;
+  opacity: 0.9;
+  background-color: rgba(221, 160, 221, 0.37);
+}
+.card3 button,a{
+  display: block;
+  text-align: center;
+  width: 86%;
+  height: 50px;
+  color: white;
+  border-style: none;
+  outline: none;
+  border-radius: 8px;
+  opacity: 0.9;
+  text-decoration: none;
+}
+.card3 a{
+  padding-top: 10px;
+  margin: 40px auto;
+}
+.card3 button{
+  padding-top: 10px;
+  margin: 27px auto;
+}
+.card3 button:hover{
+  opacity: 1;
+}
+.card3 a:hover{
+  opacity: 1;
+  color: aliceblue;
+
+}
+
+
+/* Create.php */
+
+.cardContainer4{
+  display: inline-block;
+  margin-left: 17%;
+  margin-top: 5%;
+  position: fixed;
+}
+.card4{
+  position: relative;
+  width: 800px;
+  height: 500px;
+  border-radius: 15px;
+  box-shadow: 18px 18px 18px rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.08);
+  border-top: 1.5px solid rgb(245, 245, 245,0.9);
+  border-left: 2px solid rgb(245, 245, 245,0.9);
+  border-bottom: 1px solid rgb(255, 235, 205, 0.3);
+  border-right: 1px solid rgb(255, 235, 205, 0.3);
+  backdrop-filter: blur(10px);
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+}
+.card4 input{
+  display: block;
+  text-align: center;
+  width:86%;
+  height: 40px;
+  margin: 5px auto;  
+  border-style: none;
+  outline: none;
+  border-radius: 8px;
+  opacity: 0.9;
+  background-color: rgba(221, 160, 221, 0.37);
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+  -webkit-appearance: none; margin:0;
+}
+.card4 label:nth-child(1){
+  margin-top: 15px;
+}
+.card4 button{
+  display: block;
+  text-align: center;
+  margin: 10px auto;
+  width: 86%;
+  height: 50px;
+  color: white;
+  border-style: none;
+  outline: none;
+  border-radius: 8px;
+  opacity: 0.9;
+  text-decoration: none;
+}
+.card4 button:hover{
+  opacity: 1;
+}
+.cardContainer4:-ms-input-placeholder{
+  color: red;
+  opacity: 1;
+}
+
+/* home */
+.cardContainer5{
+  display: block;
+  margin-left: 12%;
+  margin-top: 5%;
+  position: absolute;
+}
+.card5{
+  display: flex;
+  position: fixed;
+  width: 950px;
+  height: 500px;
+  border-radius: 15px;
+  box-shadow: 18px 18px 18px rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.08);
+  border-top: 1.5px solid rgb(245, 245, 245,0.9);
+  border-left: 2px solid rgb(245, 245, 245,0.9);
+  border-bottom: 1px solid rgb(255, 235, 205, 0.3);
+  border-right: 1px solid rgb(255, 235, 205, 0.3);
+  backdrop-filter: blur(10px);
+  font-size: 10px;
+  font-weight: 700;
+}
+.card5 input[type="file"]{
+  display: none;
+}
+.img1{
+  border: 2px solid rgb(245, 245, 245,0.9);
+  width: 250px;
+  height: 200px;
+  position: absolute;
+  margin-left: 37%;
+  margin-top: 4%;
+  z-index: 1;
+  opacity: 1;
+}
+.img2{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  margin-left: 48%;
+  margin-top: 26%;
+  z-index: 1;
+  opacity: 0.7;
+}
+.img2:hover{
+  opacity: 1;
+}
+.card5 p{
+  position: absolute;
+  font-size: 20px;
+  margin-left: 46%;
+  margin-top: 31%;
+}
+.cardContainer6 label img:hover{
+cursor: pointer;
+opacity: 1;
+}
+.box1{
+  display: inline-block;
+  margin-top: 31%;
+  margin-left: 2%;
+  width: 49%;
+}
+.box2{
+  text-align: center;
+  display: inline-block;
+  margin-top: 34%;
+  margin-left: 0%;
+  width: 49%;
+}
+.box1 h3{
+  margin: 25px auto;
+  display: block;
+}
+.box2 a{
+  margin-left: 20%;
+  display: block;
+  width: 66%;
+  height: 50px;
+  border-style: none;
+  outline: none;
+  border-radius: 8px;
+  opacity: 0.9;
+  text-decoration: none;
+  background: none;
+}
+.box2 a:nth-child(2){
+  margin-top: 22px;
+}
+.box2 a:nth-child(3){
+  margin-top: 7px;
+}
+.box2 a:hover{
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+.cardContainer6{
+  display: block;
+  margin-left: 38%;
+  margin-top: 1%;
+  position: fixed;
+}
+.card6{
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  box-shadow: 18px 18px 18px rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.08);
+  border-top: 1.5px solid rgb(245, 245, 245,0.9);
+  border-left: 2px solid rgb(245, 245, 245,0.9);
+  border-bottom: 1px solid rgb(255, 235, 205, 0.3);
+  border-right: 1px solid rgb(255, 235, 205, 0.3);
+  backdrop-filter: blur(10px);
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+
+/* AddContact */
+.cardContainer7{
+  display: inline-block;
+  margin-left: 17%;
+  margin-top: 5%;
+  position: fixed;
+}
+.card7{
+  width: 800px;
+  height: 500px;
+  border-radius: 15px;
+  box-shadow: 18px 18px 18px rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.08);
+  border-top: 1.5px solid rgb(245, 245, 245,0.9);
+  border-left: 2px solid rgb(245, 245, 245,0.9);
+  border-bottom: 1px solid rgb(255, 235, 205, 0.3);
+  border-right: 1px solid rgb(255, 235, 205, 0.3);
+  backdrop-filter: blur(10px);
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  padding-top: 30px;
+}
+.card7 input{
+  /* display: block; */
+  text-align: center;
+  width:86%;
+  height: 40px;
+  border-style: none;
+  outline: none;
+  border-radius: 8px;
+  opacity: 0.9;
+  background-color: rgba(221, 160, 221, 0.37);
+  grid-column-start: 2;
+  grid-column-end: 5;
+}
+.card7 label{
+  margin-top: 5px;
+}
+.card7 button{
+  margin: auto;
+  width: 50%;
+  height: 50px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  padding-top: 10px;
+}
+.card7 a{
+  text-decoration: none;
+  margin: auto;
+  width: 50%;
+  height: 50px;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  padding-top: 10px;
+}
+
+
+/* contactList */
+.tableBody{
+  margin-right: 150px;
+  margin-left: 150px;
+  margin-top: 52px;
+  font-size: 20px;
+  text-align: center;
+}
+.tableBody .image{
+  width: 50px;
+  height: 50px;
+}
+.contactimg{
+  width: 54px;
+  height: 36px;
+  border-radius: 12px;
+}
+
+/* logout */
+
+.container8{
+margin-left: 88%;
+margin-top: 1%;
+position: absolute;
+font-size: 20px;
+color: rgb(255, 0, 0,0.9);
+}
+
+.cardContainer8{
+display: block;
+}
+.card8{
+padding-top: 2px;
+padding-left: 15px;
+width: 105px;
+height: 37px;
+border-radius: 15px;
+box-shadow: 18px 18px 18px rgba(0, 0, 0, 0.4);
+background: rgba(0, 0, 0, 0.08);
+border-top: 1.5px solid rgb(245, 245, 245,0.9);
+border-left: 2px solid rgb(245, 245, 245,0.9);
+border-bottom: 1px solid rgb(255, 235, 205, 0.3);
+border-right: 1px solid rgb(255, 235, 205, 0.3);
+backdrop-filter: blur(10px);
+}
+.card8 a{
+color: black;
+}
+.card8 a:hover{
+color: rgb(161, 82, 82);
+}
+
+/* Admin */
+.container9{
+margin-left: 84%;
+margin-top: 7%;
+position: absolute;
+font-size: 20px;
+color: rgb(255, 0, 0,0.9);
+}
+
+.cardContainer9{
+display: block;
+}
+.card9{
+padding-top: 3px;
+padding-left: 18px;
+width: 140px;
+height: 40px;
+border-radius: 15px;
+box-shadow: 18px 18px 18px rgba(0, 0, 0, 0.4);
+background: rgba(0, 0, 0, 0.08);
+border-top: 1.5px solid rgb(245, 245, 245,0.9);
+border-left: 2px solid rgb(245, 245, 245,0.9);
+border-bottom: 1px solid rgb(255, 235, 205, 0.3);
+border-right: 1px solid rgb(255, 235, 205, 0.3);
+backdrop-filter: blur(10px);
+}
+.card9 a{
+color: black;
+}
+.card9 a:hover{
+color: rgb(161, 82, 82);
+}
+
+.form-control{
+  outline: none;
+}
