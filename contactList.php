@@ -8,8 +8,9 @@ if(!$idkey){
 }
 $search = $_GET['search'] ?? '';
 if($search){
-  $statement = $pdo->prepare('SELECT*FROM contact_list WHERE firstname LIKE :search OR surname LIKE :search OR phone LIKE :search OR email LIKE :search ORDER BY firstname ASC');  
+  $statement = $pdo->prepare('SELECT*FROM contact_list WHERE idkey LIKE :idkey AND firstname LIKE :search OR surname LIKE :search OR phone LIKE :search OR email LIKE :search ORDER BY firstname ASC');  
   $statement->bindValue(':search', "%$search%");
+  $statement->bindValue(':idkey', $idkey);
 }
 else{
   $statement = $pdo->prepare('SELECT*FROM contact_list WHERE idkey LIKE :idkey ORDER BY firstname ASC'); 
